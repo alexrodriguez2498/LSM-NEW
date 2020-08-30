@@ -23,6 +23,108 @@
   <button id="chat" type="button" class="btn btn-primary btn-rounded">chat <i class="fas fa-comment-dots"></i></button>
   </div>
 
+  <div class="button-discount-container">
+  <button id="discount" data-toggle="modal" data-target="#discountModal" type="button" class="btn btn-primary btn-lg">GET 50% DISCOUNT <i class="fas fa-chevron-up  fa-2x"></i></button>
+  </div>
+
+
+<div class="modal fade right" id="discountModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+
+<!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+<div class="modal-dialog modal-sm modal-side modal-top-right " role="document">
+
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title w-100" id="myModalLabel">YOUR FIRST STEP
+        TOWARDS A GREAT WEBSITE</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body mx-3">
+      <div class="md-form mb-0">
+        <i class="fas fa-user prefix grey-text"></i>
+        <input type="text" id="discount-name" class="form-control validate mb-0">
+        <label data-error="wrong" data-success="right" for="discount-name">Enter Your Name Here</label>
+      </div>
+      <div class="md-form mb-0">
+        <i class="fas fa-envelope prefix grey-text"></i>
+        <input type="email" id="discount-email" class="form-control validate mb-0">
+        <label data-error="wrong" data-success="right" for="discount-email">Enter Email Here</label>
+      </div>
+
+      <div class="md-form mb-0">
+        <i class="fas fa-phone-alt prefix grey-text"></i>
+        <input type="number" id="discount-number" class="form-control validate mb-0">
+        <label data-error="wrong" data-success="right" for="discount-number">Phone Number</label>
+      </div>
+
+      <div class="md-form">
+        <i class="fas fa-comment prefix grey-text"></i>
+        <textarea type="text" id="discount-message" class="md-textarea form-control" rows="4"></textarea>
+        <label data-error="wrong" data-success="right" for="discount-message">Your message</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center">  
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+  <div class="button-callback-container">
+  <button id="callback" type="button" data-toggle="modal" data-target="#callbackModal"class="btn btn-primary btn-lg">Request a Call Back <i class="fas fa-chevron-down  fa-2x"></i></button>
+  </div>
+  <div class="modal fade left" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+
+<!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+<div class="modal-dialog modal-sm modal-side modal-top-left " role="document">
+
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title w-100" id="myModalLabel">WE ARE HERE TO
+        GUIDE YOU TO SUCCESS</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body mx-3">
+      <div class="md-form mb-0">
+        <i class="fas fa-user prefix grey-text"></i>
+        <input type="text" id="callback-name" class="form-control validate mb-0">
+        <label data-error="wrong" data-success="right" for="callback-name">Enter Your Name Here</label>
+      </div>
+      <div class="md-form mb-0">
+        <i class="fas fa-envelope prefix grey-text"></i>
+        <input type="email" id="callback-email" class="form-control validate mb-0">
+        <label data-error="wrong" data-success="right" for="callback-email">Enter Email Here</label>
+      </div>
+
+      <div class="md-form mb-0">
+        <i class="fas fa-phone-alt prefix grey-text"></i>
+        <input type="number" id="callback-number" class="form-control validate mb-0">
+        <label data-error="wrong" data-success="right" for="callback-pass">Phone Number</label>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col text-center">  
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
   <div class="card chat-room small-chat wide" id="myForm">
     <div class="card-header white d-flex justify-content-between p-2" id="toggle" style="cursor: pointer;">
       <div class="heading d-flex justify-content-start">

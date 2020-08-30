@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>LSM | Web</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="button-chat-container">
+  <button id="chat" type="button" class="btn btn-primary btn-rounded">chat <i class="fas fa-comment-dots"></i></button>
+  </div>
+
+  <div class="card chat-room small-chat wide" id="myForm">
+    <div class="card-header white d-flex justify-content-between p-2" id="toggle" style="cursor: pointer;">
+      <div class="heading d-flex justify-content-start">
+        <div class="profile-photo">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle mr-2 ml-0">
+          <span class="state"></span>
+        </div>
+        <div class="data">
+          <p class="name mb-0"><strong>John Smith</strong></p>
+          <p class="activity text-muted mb-0">Active now</p>
+        </div>
+      </div>
+      <div class="icons grey-text">
+        <a class="feature"><i class="fas fa-video mr-2"></i></a>
+        <a class="feature"><i class="fas fa-phone mr-2"></i></a>
+        <a class="feature"><i class="fas fa-cog mr-2"></i></a>
+        <a type="button" id="closeButton"><i class="fas fa-times mr-2"></i></a>
+      </div>
+    </div>
+    <div class="my-custom-scrollbar">
+      <div class="card-body p-3">
+        <div class="chat-message">
+          <div class="media mb-3">
+            <img class="d-flex rounded mr-2" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="Generic placeholder image">
+            <div class="media-body">
+              <p class="my-0">You're friends on Facebook</p>
+              <p class="mb-0 text-muted">Web Designer at MDBootstrap</p>
+              <p class="mb-0 text-muted">Lives in Paris</p>
+            </div>
+          </div>
+          <div class="card bg-primary rounded w-75 float-right z-depth-0 mb-1">
+            <div class="card-body p-2">
+              <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit voluptatem cum eum tempore.</p>
+            </div>
+          </div>
+          <div class="card bg-primary rounded w-50 float-right z-depth-0 mb-2">
+            <div class="card-body p-2">
+              <p class="card-text text-white">Rem suscipit lorum repellendus ditiis?</p>
+            </div>
+          </div>
+          <div class="card bg-light rounded w-75 z-depth-0 mb-1 message-text">
+            <div class="card-body p-2">
+              <p class="card-text black-text">Nostrum minima cupiditate assumenda, atque cumque hic voluptatibus at corporis maxime quam harum.</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-start">
+            <div class="profile-photo message-photo">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar" class="avatar rounded-circle mr-2 ml-0">
+              <span class="state"></span>
+            </div>
+            <div class="card bg-light rounded w-75 z-depth-0 mb-2">
+              <div class="card-body p-2">
+                <p class="card-text black-text">Qui animi molestiae autem nihil optio recusandae nisi sit ab quo est.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-primary rounded w-75 float-right z-depth-0 mb-2">
+            <div class="card-body p-2">
+              <p class="card-text text-white">Maxime nostrum ut blanditiis a quod quam, quidem deleniti?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-muted white pt-1 pb-2 px-3">
+      <input type="text" id="exampleForm2" class="form-control" placeholder="Type a message...">
+      <div>
+        <a><i class="far fa-file-image mr-2"></i></a>
+        <a><i class="far fa-laugh mr-2"></i></a>
+        <a><i class="fas fa-gamepad mr-2"></i></a>
+        <a><i class="fas fa-paperclip mr-2"></i></a>
+        <a><i class="fas fa-camera mr-2"></i></a>
+        <a><i class="fas fa-thumbs-up float-right"></i></a>
+      </div>
+    </div>
+      </div>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar bg-1">
+      <div class="container">
+  
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html" >
+          <strong>LSM (LOGO)</strong>
+        </a>
+  
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+          <!-- Left -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="./servicios.html">About Us
+              </a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="./portafolio.html" >Contact Us</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="./nosotros.html" >+51 917 902 604</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a href="" class="btn btn-primary">Live Chat</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a href="" class="btn btn-primary">Hire Us</a>
+            </li>
+            
+          </ul>
+  
+  
+        </div>
+  
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <header>
+      <!--Carousel Wrapper-->
+      <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active d-flex justify-content-center align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-1.png?alt=media&token=1d905a97-7b70-480d-86b2-cad2fe5ffa6b" alt="image-1">
+            </div>
+            <div class="col">
+              <h1>Professional Web Design & Development</h1>
+              <p>We leverage the strengths of each and every platform to build incredible solutions across apple services iPhone, iPad, Apple Watch, and android devices.</p>
+              <div class="row">
+                <div class="col">
+                  <p>Seamless User Experiences</p>
+                  <p>Cross Platform Compatibility</p>
+                </div>
+                <div class="col">
+                  <p>Diverse technology</p>
+                  <p>UNprecedented Success</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          </div>
+       
+        <!--/First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item d-flex justify-content-center align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-2.png?alt=media&token=ade01c56-2f47-4b90-9637-79ad10673fa6 " alt="iamge-2">
+              </div>
+              <div class="col-6">
+                <h1>Next Level Web Design & Development</h1>
+                <p>Our dedicated team of design and technology experts partner with you every step of the way to digital innovation independence.</p>
+                <div class="row">
+                  <div class="col">
+                    <p>Wireframing And Prototyping</p>
+                    <p>Flexible Grid Implementation</p>
+                  </div>
+                  <div class="col">
+                    <p>Responsive Development</p>
+                    <p>Content Management Systems</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        
+        <!--/Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item d-flex justify-content-center align-items-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-3.png?alt=media&token=5bccb849-34d0-47d9-b256-168a245915d8" alt="image-3">
+              </div>
+              <div class="col-6">
+                <h1>70% INcrease In Conversion Rate</h1>
+                <p>Effortlessly capture leads, build customer relationships and accept payments right from your device.</p>
+                <div class="row">
+                  <div class="col">
+                    <p>Merchant Integration</p>
+                    <p>Product Report</p>
+                  </div>
+                  <div class="col">
+                    <p>Products & Categories</p>
+                    <p>Customer's Registration</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          </div>
+       
+        <!--/Third slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+    </header>
+    <main>
+      <section class="services-buttons container-fluid ">
+          <div class="row mx-auto">
+            <div class="col p-4 text-center border-bottom" >
+              <a id="responsive-websites"> Responsive Websites </a>
+            </div>
+            <div class="col p-4 text-center border-bottom" >
+              <a id="ecommerce-websites"> Ecommerce Websitess </a>
+            </div>
+            <div class="col p-4 text-center border-bottom" >
+              <a id="cms-websites"> CMS Websites </a>
+            </div>
+            <div class="col p-4 text-center border-bottom" >
+              <a id="b2b-portals"> B2B Portals </a>
+            </div>
+            <div class="col p-4 text-center border-bottom" >
+              <a id="b2c-portals"> B2C Portals </a>
+            </div>
+            <div class="col p-4 text-center border-bottom" >
+              <a id="mobile-apps"> Mobile Apps </a>
+            </div>
+          </div>
+      </section>
+
+      <section class="services container">
+        <div class="row service1 mt-5 py-5" id="responsive-websites-row">
+          <div class="col-6">
+            <h1>Creative  Responsive Websites</h1>
+            <h4>Increase Your Yearly  Revenue  With Responsive Web Design</h4>
+            <p>Responsive websites will help you reach your audience in a much better ratio than typical websites. People now conduct almost 90% of their daily activities via their smartphones and tablets. These devices have various screen size resolutions which leads to the need of having websites with flexible screen dimensions. They should be visible without compromise on quality and screen resolution regardless of the screen size of the device.</p>
+            <div class="row">
+              <div class="col">
+                <p>Flexible Grid Implementation</p>
+                <p>CSS3 Media Query Listeners</p>
+                <p>CSS3 Styling Responsive Code</p>
+              </div>
+              <div class="col">
+                <p>Layout Alteration</p>
+                <p>Dynamic Resizing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <figure>
+              <img class="img-fluid"src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-4.png?alt=media&token=0b8f2c8c-c8e6-494f-ba2b-058a89ad297d" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <div class="row service2 mt-5 py-5" id="ecommerce-websites-row">
+          <div class="col">
+            <h1>Ecommerce Web Design & development</h1>
+            <h4>1679+ Ecommerce Stores for Businesses Worldwide</h4>
+            <p>At Weblogies, we don't just create ecommerce websites. We give you a complete online solution with the main goal of enhancing your yearly revenues double-fold. We aim to give your business the online exposure and brand acknowledgement that will help you in achieving increased conversions leading to profitable sales.</p>
+            <div class="row">
+              <div class="col">
+                <p>Merchant Integration</p>
+                <p>Products & Categories</p>
+                <p>Product Reports</p> 
+              </div>
+              <div class="col">
+                <p>Content Management System</p>
+                <p>Customer's Registration</p>
+                <p>Discount Coupons</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <figure>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-5.png?alt=media&token=7b39e9eb-90e9-4669-b227-4167262fbd32" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <div class="row service3 mt-5 py-5" id="cms-websites-row">
+          <div class="col">
+            <h1>Powerful CMS Websites</h1>
+            <h4>Take Control of Your Website with a Robust CMS</h4>
+            <p>Content Management Systems (CMS) gives you — the domain owner with complete control of your website. With a strong CMS, you can upload, download, edit and manipulate data just the way you want. Being a flexible platform, you can also integrate additional features on the site as and when needed. At Weblogies, we create CMS websites with the sole objective of helping business owners manage and maintain their site with no worries.</p>
+            <div class="row">
+              <div class="col">
+                <p>Wordpress</p>
+                <p>Joomia</p>
+              </div>
+              <div class="col">
+                <p>Drupal</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <figure>
+              <img class="img-fluid"src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-6.png?alt=media&token=2952eb6f-5d17-4a1e-a046-f3b77ec0d0b3" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <div class="row service4 mt-5 py-5" id="b2b-portals-row">
+            <div class="col">
+              <h1>B2B Web Portal Development</h1>
+              <h4>Robust Portals for Organizations Serving Commercial Clients</h4>
+              <p>B2B portals are designed to give ecommerce support for customized e-business centers. We at Weblogies, help organizations advertise and introduce their products and services to other businesses around the world. Our web applications development and enterprise management skills give us the leverage to create high quality B2B portals, dedicated to increasing productivity and better business operations.</p>
+              <div class="row">
+                <div class="col">
+                  <p>Real State Portal</p>
+                  <p>Job & Recruitment Portals</p>
+                  <p>Education Management</p>
+                </div>
+                <div class="col">
+                  <p>Online Ticketing System</p>
+                  <p>Payroll Management Portals</p>
+                  <p>Travel & Tours Management</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <figure>
+                <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-7.png?alt=media&token=621f019e-bd1a-4bb1-92a3-1259d5de67f0" alt="">
+              </figure>
+            </div>
+          </div>
+
+        <div class="row service5 mt-5 py-5" id="b2c-portals-row">
+          <div class="col">
+            <h1>B2C Web Portal Development</h1>
+            <h4>Enhancing Business Processes with Flexible Portals</h4>
+            <p>We help make your business process more effective by providing essential services such as content management, data and information management online, communication management and much more. For the past decade, we've been providing high end B2C portal web development solutions for clients belonging to various industries and domains.</p>
+            <div class="row">
+              <div class="col">
+                <p>Ecommerce Store</p>
+                <p>Travel Portals</p>
+                <p>Healthcare Portals</p>
+              </div>
+              <div class="col">
+                <p>Wholesale Portals</p>
+                <p>Entertainment Portals</p>
+                <p>Online Food Delivery</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <figure>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-8.png?alt=media&token=e02447e6-63c2-41f6-a67f-4e832fceba75" alt="">  
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote container mb-5 pb-5">
+        <div class="row text-center">
+            <div class="col-8 text-center mx-auto pt-3">
+              <h1 class="font-weight-bold">Connect With Us To Get Custom Quote
+                On Your Web Project Today!</h1>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-9 text-center mx-auto py-2">
+              <h5>If You Are Interested in Speaking with Our Customer Support Representative About an Upcoming Project,
+                Give Us A Call Right Away. Let's Connect and Straighten Out Your Question Marks Forthwith Once and For All.</h5>
+            </div>
+          </div>
+          <div class="row text-center ">
+            <div class="col-3 d-flex justify-content-center ml-auto">
+              <div class="quote-icon d-flex align-items-center border-right pr-2">
+                <i class="fas fa-phone-volume fa-3x"></i>
+              </div>
+              <div class="quote-CTO pl-2">
+                <h5 class="m-0">Toll Free</h5>
+              <p class="m-0">+1 973 273 4254</p>
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <div class="quote-icon d-flex align-items-center border-right pr-2">
+                <i class="fas fa-mobile-alt fa-3x"></i>
+              </div>
+              <div class="quote-CTO pl-2">
+                <h5 class="m-0">Request</h5>  
+              <p class="m-0">Call Back</p>
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center mr-auto">
+              <div class="quote-icon d-flex align-items-center border-right pr-2">
+                <i class="far fa-comments fa-3x"></i>
+              </div>
+              <div class="quote-CTO pl-2">
+                <h5 class="m-0">Start a</h5>
+              <p class="m-0">Live Chat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Pricing container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h1 class="font-weight-bold">Carefully Crafted Website Packages For New And Existing Businesses</h1>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-12">
+            <h5>We Provide Highly Flexible And Affordable Design Options</h5>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col d-flex justify-content-end">
+            <a id="pricing-websites-button" class="btn btn-primary">CMS Websites</a>
+          </div>
+          <div class="col">
+            <a id="pricing-ecommerce-button" class="btn btn-primary">Ecommerce</a>
+          </div>
+        </div>
+
+        <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 website-carousel" data-ride="carousel">
+
+          <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
+                class="fas fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
+                class="fas fa-chevron-right"></i></a>
+          </div>
+          <!--/.Controls-->
+        
+       
+        
+          <div class="carousel-inner v-2" role="listbox">
+        
+            <div class="carousel-item active">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <div class="row text-center">
+                      <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
+                      <div class="col-12"><h2>Basic</h2></div>
+                      <div class="col-12"><h4>Website Package</h4></div>
+                    </div>
+                  </div>
+                    <div class="card-body example-1 scrollbar-ripe-malinka m-4">
+                            <div class="row">
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">2 Stock Images</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">2 Page Website</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">1 JQuery Slider Banner</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Contact/Query Form</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete W3C Certified HTML</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete Deployment</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Satisfaction Guarantee</p></div>
+                              <div class="col-12 text-center"><p>100% Unique Design Guarantee</p></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end border-right align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x"></i><h1 class="m-0 pl-2">199</h1>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <i class="fas fa-dollar-sign "></i> <h4 class="line-through m-0 pl-2">388</h4>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col ">
+                        <a href="" class="btn btn-primary ">ORDER NOW</a>
+                      </div>
+                    </div>
+                    <div class="row text-center p-2">
+                      <div class="col d-flex align-items-center justify-content-center pr-0 border-right "><i class="fas fa-comments"></i><p class="m-0">live chat</p></div>
+                      <div class="col d-flex align-items-center border-left"><i class="fas fa-phone-alt"></i><p class="m-0">+51 917 902 604</p></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <div class="row text-center">
+                      <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
+                      <div class="col-12"><h2>Startup</h2></div>
+                      <div class="col-12"><h4>Website Package</h4></div>
+                    </div>
+                  </div>
+                    <div class="card-body example-1 scrollbar-ripe-malinka m-4">
+                            <div class="row">
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">5 Stock Photos</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">5 Page Website</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">3 Banner Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">1 JQuery Slider Banner</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">FREE Google Friendly Sitemap</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete W3C Certified HTML</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Satisfaction Guarantee</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Unique Design Guarantee</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Mobile Responsive Will Be Additional $200*</p></div>
+                              <div class="col-12 text-center"><p>CMS Will Be Additional $250*</p></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end border-right align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x"></i><h1 class="m-0 pl-2">394</h1>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <i class="fas fa-dollar-sign "></i> <h4 class="line-through m-0 pl-2">788</h4>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col ">
+                        <a href="" class="btn btn-primary ">ORDER NOW</a>
+                      </div>
+                    </div>
+                    <div class="row text-center p-2">
+                      <div class="col d-flex align-items-center justify-content-center pr-0 border-right "><i class="fas fa-comments"></i><p class="m-0">live chat</p></div>
+                      <div class="col d-flex align-items-center border-left"><i class="fas fa-phone-alt"></i><p class="m-0">+51 917 902 604</p></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <div class="row text-center">
+                      <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
+                      <div class="col-12"><h2>Professional</h2></div>
+                      <div class="col-12"><h4>Website Package</h4></div>
+                    </div>
+                  </div>
+                    <div class="card-body example-1 scrollbar-ripe-malinka m-4">
+                            <div class="row">
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">10 Unique Pages Website</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">CMS / Admin Panel Support</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">8 Stock Images</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">5 Banner Designs</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">1 JQuery Slider Banner</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">FREE Google Friendly Sitemap</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete W3C Certified HTML</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete Deployment</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Satisfaction Guarantee</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Unique Design Guarantee</p></div>
+                              <div class="col-12 text-center"><p>Mobile Responsive Will Be Additional $200*</p></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end border-right align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x"></i><h1 class="m-0 pl-2">844</h1>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <i class="fas fa-dollar-sign "></i> <h4 class="line-through m-0 pl-2">1,688</h4>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col ">
+                        <a href="" class="btn btn-primary ">ORDER NOW</a>
+                      </div>
+                    </div>
+                    <div class="row text-center p-2">
+                      <div class="col d-flex align-items-center justify-content-center pr-0 border-right "><i class="fas fa-comments"></i><p class="m-0">live chat</p></div>
+                      <div class="col d-flex align-items-center border-left"><i class="fas fa-phone-alt"></i><p class="m-0">+51 917 902 604</p></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <div class="row text-center">
+                      <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
+                      <div class="col-12"><h2>Elite</h2></div>
+                      <div class="col-12"><h4>Website Package</h4></div>
+                    </div>
+                  </div>
+                    <div class="card-body example-1 scrollbar-ripe-malinka m-4">
+                            <div class="row">
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Upto 15 Unique Pages Website</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Conceptual And Dynamic Website </p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Mobile Responsive</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Online Reservation/Appointment Tool (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Online Payment Integration (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Custom Forms</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Lead Capturing Forms (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Striking Hover Effects</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Newsletter Subscription (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Newsfeed Integration</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Social Media Integration</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Search Engine Submission</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">5 Stock Photos</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">3 Unique Banner Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">1 JQuery Slider Banner</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete W3C Certified HTML</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete Deployment</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Satisfaction Guarantee</p></div>
+                              <div class="col-12 text-center"><p>100% Unique Design Guarantee</p></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end border-right align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x"></i><h1 class="m-0 pl-2">1,494</h1>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <i class="fas fa-dollar-sign "></i> <h4 class="line-through m-0 pl-2">2,988</h4>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col ">
+                        <a href="" class="btn btn-primary ">ORDER NOW</a>
+                      </div>
+                    </div>
+                    <div class="row text-center p-2">
+                      <div class="col d-flex align-items-center justify-content-center pr-0 border-right "><i class="fas fa-comments"></i><p class="m-0">live chat</p></div>
+                      <div class="col d-flex align-items-center border-left"><i class="fas fa-phone-alt"></i><p class="m-0">+51 917 902 604</p></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <div class="row text-center">
+                      <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
+                      <div class="col-12"><h2>Corporate</h2></div>
+                      <div class="col-12"><h4>Website Package</h4></div>
+                    </div>
+                  </div>
+                    <div class="card-body example-1 scrollbar-ripe-malinka m-4">
+                            <div class="row">
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">15 To 20 Pages Website</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Custom Made, Interactive, Dynamic & High End Design </p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Custom WP (Or) Custom PHP Development</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">1 JQuery Slider Banner</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Up To 10 Custom Made Banner Designs</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">10 Stock Images</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Unlimited Revisions</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Special Hoover Effects</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Content Management System (CMS)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Online Appointment/Scheduling/Online Ordering Integration (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Online Payment Integration (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Multi Lingual (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Custom Dynamic Forms (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Signup Area (For Newsletters, Offers Etc.)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Search Bar</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Live Feeds Of Social Networks Integration (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Mobile Responsive</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">FREE 5 Years Domain Name</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Free Google Friendly Sitemap</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Search Engine Submission</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete W3C Certified HTML</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Industry Specified Team Of Expert Designers And Developers</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete Deployment</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Dedicated Accounts Manager</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Ownership Rights</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Satisfaction Guarantee</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Unique Design Guarantee</p></div>
+                              <div class="col-12 text-center"><p>100% Unique Design Guarantee</p></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end border-right align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x"></i><h1 class="m-0 pl-2">2,394</h1>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <i class="fas fa-dollar-sign "></i> <h4 class="line-through m-0 pl-2">4,788</h4>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col ">
+                        <a href="" class="btn btn-primary ">ORDER NOW</a>
+                      </div>
+                    </div>
+                    <div class="row text-center p-2">
+                      <div class="col d-flex align-items-center justify-content-center pr-0 border-right "><i class="fas fa-comments"></i><p class="m-0">live chat</p></div>
+                      <div class="col d-flex align-items-center border-left"><i class="fas fa-phone-alt"></i><p class="m-0">+51 917 902 604</p></div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <div class="row text-center">
+                      <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
+                      <div class="col-12"><h2>Corporate</h2></div>
+                      <div class="col-12"><h4>Website Package</h4></div>
+                    </div>
+                  </div>
+                    <div class="card-body example-1 scrollbar-ripe-malinka m-4">
+                            <div class="row">
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">15 Seconds 2D Explainer Video</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Voice - Over & Sound Effects</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Professional Script Writing</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">1 JQuery Slider Banner</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Up To 10 Custom Made Banner Designs</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Storyboard</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">SEO Meta Tags</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">15 To 20 Pages Website</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Custom Made, Interactive, Dynamic & High End Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Custom WP (Or) Custom PHP Development</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Up To 10 Custom Made Banner Designs</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">10 Stock Images</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Unlimited Revisions</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">SSpecial Hoover Effects</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Content Management System (CMS)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Online Appointment/Scheduling/Online Ordering Integration (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Online Payment Integration (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Multi Lingual (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Custom Dynamic Forms (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Signup Area (For Newsletters, Offers Etc.)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Search Bar</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Live Feeds Of Social Networks Integration (Optional)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Mobile Responsive</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">FREE 5 Years Domain Name</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Free Google Friendly Sitemap</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Search Engine Submission</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete W3C Certified HTML</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Industry Specified Team Of Expert Designers And Developers</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Complete Deployment</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Dedicated Accounts Manager</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Ownership Rights</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Satisfaction Guarantee</p></div>
+                              <div class="col-12 text-center"><p>100% Unique Design Guarantee</p></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end border-right align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x"></i><h1 class="m-0 pl-2">2,999</h1>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <i class="fas fa-dollar-sign "></i> <h4 class="line-through m-0 pl-2">5,988</h4>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col ">
+                        <a href="" class="btn btn-primary ">ORDER NOW</a>
+                      </div>
+                    </div>
+                    <div class="row text-center p-2">
+                      <div class="col d-flex align-items-center justify-content-center pr-0 border-right "><i class="fas fa-comments"></i><p class="m-0">live chat</p></div>
+                      <div class="col d-flex align-items-center border-left"><i class="fas fa-phone-alt"></i><p class="m-0">+51 917 902 604</p></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        
+        </div>
+
+        <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 ecommerce-carousel" data-ride="carousel">
+
+            <!--Controls-->
+            <div class="controls-top">
+              <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
+                  class="fas fa-chevron-left"></i></a>
+              <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
+                  class="fas fa-chevron-right"></i></a>
+            </div>
+            <!--/.Controls-->
+        
+       
+        
+          <div class="carousel-inner v-2" role="listbox">
+        
+            <div class="carousel-item active">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <div class="row text-center">
+                      <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
+                      <div class="col-12"><h2>Startup E-Commerce</h2></div>
+                      <div class="col-12"><h4> Package</h4></div>
+                    </div>
+                  </div>
+                    <div class="card-body example-1 scrollbar-ripe-malinka m-4">
+                            <div class="row">
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Customized Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Up-To 100 Products</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Content Management System (CMS)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Mini Shopping Cart Integration</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Payment Module Integration</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Easy Product Search</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Dedicated Designer & Developer</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Unlimited Revisions</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Satisfaction Guarantee</p></div>
+                              <div class="col-12 text-center"><p>100% Unique Design Guarantee</p></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end border-right align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x"></i><h1 class="m-0 pl-2">794</h1>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <i class="fas fa-dollar-sign "></i> <h4 class="line-through m-0 pl-2">1,598</h4>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col ">
+                        <a href="" class="btn btn-primary ">ORDER NOW</a>
+                      </div>
+                    </div>
+                    <div class="row text-center p-2">
+                      <div class="col d-flex align-items-center justify-content-center pr-0 border-right "><i class="fas fa-comments"></i><p class="m-0">live chat</p></div>
+                      <div class="col d-flex align-items-center border-left"><i class="fas fa-phone-alt"></i><p class="m-0">+51 917 902 604</p></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <div class="row text-center">
+                      <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
+                      <div class="col-12"><h2>Professional E-Commerce</h2></div>
+                      <div class="col-12"><h4> Package</h4></div>
+                    </div>
+                  </div>
+                    <div class="card-body example-1 scrollbar-ripe-malinka m-4">
+                            <div class="row">
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Customized Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Up-To 500 Products</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Content Management System (CMS)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Full Shopping Cart Integration</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Payment Module Integration</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Easy Product Search</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Product Reviews</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">5 Promotional Banners</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Team Of Expert Designers & Developers</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Unlimited Revisions</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Satisfaction Guarantee</p></div>
+                              <div class="col-12 text-center"><p>100% Unique Design Guarantee</p></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end border-right align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x"></i><h1 class="m-0 pl-2">1,394</h1>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <i class="fas fa-dollar-sign "></i> <h4 class="line-through m-0 pl-2">2,788</h4>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col ">
+                        <a href="" class="btn btn-primary ">ORDER NOW</a>
+                      </div>
+                    </div>
+                    <div class="row text-center p-2">
+                      <div class="col d-flex align-items-center justify-content-center pr-0 border-right "><i class="fas fa-comments"></i><p class="m-0">live chat</p></div>
+                      <div class="col d-flex align-items-center border-left"><i class="fas fa-phone-alt"></i><p class="m-0">+51 917 902 604</p></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-12 col-md-4">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <div class="row text-center">
+                      <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
+                      <div class="col-12"><h2>Elite E-Commerce</h2></div>
+                      <div class="col-12"><h4> Package</h4></div>
+                    </div>
+                  </div>
+                    <div class="card-body example-1 scrollbar-ripe-malinka m-4">
+                            <div class="row">
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">UNLIMITED Logo Design Concepts</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">By 6 Award Winning Designers</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Icon Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">UNLIMITED Revisions</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Print Media</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Stationary Design (BusinessCard,Letterhead & Envelope)</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Invoice Design, Email Signature</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Bi-Fold Brochure (OR) 2 Sided Flyer Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Product Catalog Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Sign Age Design (OR) Label Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">T-Shirt Design (OR) Car Wrap Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Website</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">E-Commerce Store Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Product Detail Page Design</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Unique Banner Slider</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Featured Products Showcase</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Full Shopping Cart Integration</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Unlimited Products</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Unlimited Categories</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Product Rating & Reviews</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Easy Product Search</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Payment Gateway Integration</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Multi-Currency Support</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Content Management System</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Cutomer Log-In Area</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Mobile Responsive</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Social Media Plugins Integration</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Coupon Platfom</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Tell A Friend Feature</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Social Media Pages</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Facebook , Twitter, YouTube, Google+ & Pinterest Page Designs</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Value Added Services</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Dedicated Account Manager</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">Unlimited Revisions</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">All Final File Formats</p></div>
+                              <div class="col-12 text-center border-bottom pb-2"><p class="m-0">100% Ownership Rights</p></div>
+                              <div class="col-12 text-center"><p>100% Satisfaction Guarantee</p></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end border-right align-items-center">
+                        <i class="fas fa-dollar-sign fa-3x"></i><h1 class="m-0 pl-2">3,694</h1>
+                      </div>
+                      <div class="col d-flex align-items-center">
+                        <i class="fas fa-dollar-sign "></i> <h4 class="line-through m-0 pl-2">7,388</h4>
+                      </div>
+                    </div>
+                    <div class="row text-center">
+                      <div class="col ">
+                        <a href="" class="btn btn-primary ">ORDER NOW</a>
+                      </div>
+                    </div>
+                    <div class="row text-center p-2">
+                      <div class="col d-flex align-items-center justify-content-center pr-0 border-right "><i class="fas fa-comments"></i><p class="m-0">live chat</p></div>
+                      <div class="col d-flex align-items-center border-left"><i class="fas fa-phone-alt"></i><p class="m-0">+51 917 902 604</p></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+        
+          </div>
+        
+        </div>
+
+        <div class="row text-center pb-5 mb-5">
+          <div class="col-12 mb-5"><h1 class="font-weight-bold">Key Features</h1></div>
+          <div class="col border-right" data-toggle="tooltip" data-placement="top" title="To Ensure Your Satisfaction We Provide Effective Revision Policy.">
+           <div class="features-icon pb-4">
+            <i class="fas fa-chart-line fa-4x "></i>
+           </div>
+           <div class="features-text">
+            <a >100% Satisfaction Guarantee</a>
+           </div>
+          </div>
+          <div class="col border-right border-left " data-toggle="tooltip" data-placement="top" title="We Give Your Brand Nothing But The Best. Every Design Is Unique And Impactful.">
+            <div class="features-icon pb-4">
+              <i class="fab fa-sketch fa-4x"></i>
+            </div>
+            <div class="features-text">
+              <p>Unique Design Guarantee</p>
+            </div>
+          </div>
+          <div class="col border-right border-left " data-toggle="tooltip" data-placement="top" title="We Are Confident Of Our Exceptional Work. We Provide Money Back Guarantee To Give You Complete Satisfaction.">
+            <div class="features-icon pb-4">
+              <i class="fas fa-hand-holding-usd fa-4x"></i>
+            </div>
+            <div class="features-text">
+              <p>100% Money Back Guarantee</p>
+            </div>
+          </div>
+          <div class="col border-right border-left " data-toggle="tooltip" data-placement="top" title="We Are Here To Assist You Round The Clock. Contact Us For Any Queries Or Concerns.">
+            <div class="features-icon pb-4">
+              <i class="fab fa-keybase fa-4x"></i>
+            </div>
+            <div class="features-text">
+              <p>24/7 Design Consultancy</p>
+            </div>
+          </div>
+          <div class="col border-left " data-toggle="tooltip" data-placement="top" title="Our Designers Have Received Several Awards For Their High-Quality Design And Branding Solutions.">
+            <div class="features-icon pb-4">
+              <i class="fas fa-user-ninja fa-4x"></i>
+            </div>
+            <div class="features-text">
+              <p>Award Winning Designers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio container mb-5 pb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="font-weight-bold">A Glimpse Into Our Award-Winning Website Portfolio</h1>
+          </div>
+          <div class="col-12 text-center">
+            <h5>Having Spent Years In The Industry, We Have A Wide Portfolio To Talk About</h5>
+          </div>
+        </div>
+        <div class="row mt-4 mb-5">
+          <div class="col  d-flex justify-content-end"> <a href="" class="btn btn-primary">Website</a></div>
+          <div class="col"> <a href="" class="btn btn-primary">Ecommerce</a></div>
+        </div>
+
+        <div class="row row-cols-3">
+          <div class="col mb-4">
+            <!-- Card -->
+            <div class="card">
+              
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-black-strong view-site"><button type="button" class=" btn btn-outline-success">View Site</button></div>
+                </a>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4">
+            <!-- Card -->
+            <div class="card">
+        
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-black-strong view-site"><button type="button" class ="btn btn-outline-success">View Site</button></div>
+                </a>
+              </div>
+             </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4">
+            <!-- Card -->
+            <div class="card">
+        
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-black-strong view-site"><button type="button" class ="btn btn-outline-success">View Site</button></div>
+                </a>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4">
+            <!-- Card -->
+            <div class="card">
+        
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-black-strong view-site"><button type="button" class ="btn btn-outline-success">View Site</button></div>
+                </a>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4">
+            <!-- Card -->
+            <div class="card">
+        
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-black-strong view-site"><button type="button" class ="btn btn-outline-success">View Site</button></div>
+                </a>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4">
+            <!-- Card -->
+            <div class="card">
+        
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-black-strong view-site"><button type="button" class ="btn btn-outline-success">View Site</button></div>
+                </a>
+              </div>
+             </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4">
+            <!-- Card -->
+            <div class="card">
+        
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-black-strong view-site"><button type="button" class ="btn btn-outline-success">View Site</button></div>
+                </a>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4">
+            <!-- Card -->
+            <div class="card">
+        
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-black-strong view-site"><button type="button" class ="btn btn-outline-success">View Site</button></div>
+                </a>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4">
+            <!-- Card -->
+            <div class="card">
+        
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-black-strong view-site"><button type="button" class ="btn btn-outline-success">View Site</button></div>
+                </a>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="why-choose-us container-fluid text-white pt-4 pb-5 mb-3 bg-dark">
+       <div class="container">
+        <div class="row text-center "> 
+          <div class="col-12 mb-4">
+            <h1 class="font-weight-bold">Why Choose Us</h1>
+            <h4>Ensusre Complete Optimization Of Your Website</h4>  
+          </div>
+          <div class="row text-center">
+            <div class="col-3">
+              <figure>
+                <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fanalyze-goals.png?alt=media&token=42847090-c47c-48d6-9ed8-9310080c53b5" alt="" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold">Analyze Goals and
+                Opportunities</h5>
+                <p>We review your competition, evaluate your products and services, and design your branding plan.</p>
+            </div>
+            <div class="col-3">
+              <figure>
+                <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fanalyze-goals.png?alt=media&token=42847090-c47c-48d6-9ed8-9310080c53b5" alt="" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold">Interactive Website
+                Layout Strategy</h5>
+                <p>Our experts determine the best website structure to instigate credible clientele traffic to your site.</p>
+            </div>
+            <div class="col-3">
+              <figure>
+                <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fanalyze-goals.png?alt=media&token=42847090-c47c-48d6-9ed8-9310080c53b5" alt="" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold">Content Development /
+                Copywriting</h5>
+                <p>Content is checked, organized & optimized for SEO to enhance the web flow and improve search rating.</p>
+            </div>
+            <div class="col-3">
+              <figure>
+                <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fanalyze-goals.png?alt=media&token=42847090-c47c-48d6-9ed8-9310080c53b5" alt="" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold">Custom Design
+                Pages</h5>
+                <p>Each page is custom designed and include unlimited revisions & stock photography.</p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-3">
+              <figure>
+                <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fanalyze-goals.png?alt=media&token=42847090-c47c-48d6-9ed8-9310080c53b5" alt="" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold">Responsive Web
+                Development</h5>
+                <p>Your site is developed to adjust for different screen sizes and supports all devices & orientation.</p>
+            </div>
+            <div class="col-3">
+              <figure>
+                <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fanalyze-goals.png?alt=media&token=42847090-c47c-48d6-9ed8-9310080c53b5" alt="" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold">WordPress Content
+                Management System</h5>
+                <p>Includes point/clicking editing for content updates in seconds. Editing made easy with no monthly fee.</p>
+            </div>
+            <div class="col-3">
+              <figure>
+                <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fanalyze-goals.png?alt=media&token=42847090-c47c-48d6-9ed8-9310080c53b5" alt="" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold">One on One
+                Training</h5>
+                <p>Your website comes with in-depth training on editing and creating pages. Keep your site up-to-date, always!</p>
+            </div>
+            <div class="col-3">
+              <figure>
+                <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fanalyze-goals.png?alt=media&token=42847090-c47c-48d6-9ed8-9310080c53b5" alt="" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold">Other Items</h5>
+              <p>We launch the site to your hosting & include social media links, contact forms, and stock photos.</p>
+            </div>
+          </div>
+        </div>  
+       </div>
+      </section>
+
+      <section class="quote-2 container mb-5 pb-5">
+        <div class="row text-center">
+            <div class="col-8 text-center mx-auto pt-3">
+              <h1 class="font-weight-bold">Connect With Us To Get Custom Quote
+                On Your Web Project Today!</h1>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-9 text-center mx-auto py-2">
+              <h5>If You Are Interested in Speaking with Our Customer Support Representative About an Upcoming Project,
+                Give Us A Call Right Away. Let's Connect and Straighten Out Your Question Marks Forthwith Once and For All.</h5>
+            </div>
+          </div>
+          <div class="row text-center ">
+            <div class="col-3 d-flex justify-content-center ml-auto">
+              <div class="quote-icon d-flex align-items-center border-right pr-2">
+                <i class="fas fa-phone-volume fa-3x"></i>
+              </div>
+              <div class="quote-CTO pl-2">
+                <h5 class="m-0">Toll Free</h5>
+              <p class="m-0">+1 973 273 4254</p>
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <div class="quote-icon d-flex align-items-center border-right pr-2">
+                <i class="fas fa-mobile-alt fa-3x"></i>
+              </div>
+              <div class="quote-CTO pl-2">
+                <h5 class="m-0">Request</h5>  
+              <p class="m-0">Call Back</p>
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center mr-auto">
+              <div class="quote-icon d-flex align-items-center border-right pr-2">
+                <i class="far fa-comments fa-3x"></i>
+              </div>
+              <div class="quote-CTO pl-2">
+                <h5 class="m-0">Start a</h5>
+              <p class="m-0">Live Chat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="exprerience container-fluid grey lighten-2">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="font-weight-bold">We Have Served Over 200+ Industries</h1>
+            <h5>  We Stay On Top Of Our Industry By Being Experts In Yours</h5>
+          </div>
+        </div>
+        <div class="container ">
+        <div class="row py-5">
+          <div class="col text-center"><figure>
+            <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fenterprise.png?alt=media&token=11b817d5-26fd-45c2-8938-eb420b388f87" alt="" class="img-fluid">
+          </figure>
+          <h4>Enterprise</h4>
+        </div>
+          <div class="col text-center">
+            <figure>
+              <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fbwb.png?alt=media&token=d4054c42-2b8e-4fb9-aa26-7434bb873f7e" alt="" class="img-fluid">
+            </figure>
+            <h4>B2B</h4>
+          </div>
+          <div class="col text-center">
+            <figure>
+              <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fb2c.png?alt=media&token=c4e4dc23-da46-4437-ae63-0d62e8a06104" alt="" class="img-fluid">
+            </figure>
+            <h4>B2C</h4>
+          </div>
+          <div class="col text-center">
+            <figure>
+              <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fecommerce.png?alt=media&token=ed74c016-e112-44a8-98f7-a3ad755ca3a9" alt="" class="img-fluid">
+            </figure>
+            <h4>Ecommerce</h4>
+          </div>
+          <div class="col text-center">
+            <figure>
+              <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Feducation.png?alt=media&token=ef6557b5-13cd-4472-8c4a-05c17e52ac39" alt="" class="img-fluid">
+            </figure>
+            <h4>Education</h4>
+          </div>
+          <div class="col text-center">
+            <figure>
+              <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fnone-profit.png?alt=media&token=cdf8d6ef-c23d-4505-a6bb-ab2675c6a4f5" alt="" class="img-fluid">
+            </figure>
+            <h4>Non-Profit</h4>
+          </div>
+          <div class="col text-center">
+            <figure>
+              <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fstartup.png?alt=media&token=07673b1f-a5c3-401b-ace7-33c5439c86ed" alt="" class="img-fluid">
+            </figure>
+            <h4>Startups</h4>
+          </div>
+        </div>
+        <div class="row row-cols-3  p-4">
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Automotive</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Food & Beverage</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Real State</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>B2B</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Govement</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Schools & Institutions</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Beauty & Fashion</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Luxury</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Small Business</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Ecommerce</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Medical & HealthCare</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Sports</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Entertainment & Media</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Non-Profit</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Technology Services</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Financial</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Publication</p></div>
+          <div class="col"><p class="white font-weight-bold border border-white p-3"><i class="fas fa-caret-right px-3"></i>Travel</p></div>
+        </div>
+      </div>  
+      </section>
+      
+      <section class="process container pb-5 mb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="font-weight-bold">Our Comprehensive Process</h1>
+          </div>
+          <div class="col-12 text-center">
+            <h4>Our Process Is Simple And Aims At Delivering Flawless Results For Every Project</h4>
+          </div>
+        </div>
+
+        <ul class="nav  my-4 py-4 d-flex justify-content-around">
+          <li class="nav-item">
+            <a id="research-button"class="nav-link active">Research</a>
+          </li>
+          <li class="nav-item">
+            <a id="ideate-button"class="nav-link">Ideate</a>
+          </li>
+          <li class="nav-item">
+            <a id="create-button"class="nav-link">Create</a>
+          </li>
+          <li class="nav-item">
+            <a id="color-button"class="nav-link ">Color</a>
+          </li>
+          <li class="nav-item">
+            <a id="revision-button"class="nav-link">Revision</a>
+          </li>
+          <li class="nav-item">
+            <a id="finalize-button"class="nav-link ">Finalize</a>
+          </li>
+        </ul> 
+
+        <div class="row step1" id="research-row"> 
+          <div class="col-4">
+            <figure>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fresearch.png?alt=media&token=8cfdaede-0e28-4d4d-a7e7-78cc9b907b17" alt="">
+            </figure>
+          </div>
+          <div class="col-8">
+            <h1>Research</h1>
+            <p>As soon as your order is finalized with us, we deploy the design team to research and analyze the industry. This allows them to design something that not only fits your business but also effectively communicate with your audience, resulting in an aptly research conceptualization.</p>
+          </div>
+        </div>
+        <div class="row step2" id="ideate-row"> 
+          <div class="col-4">
+            <figure>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fideate.png?alt=media&token=b4c9b9c1-e767-454f-8214-d98da62f9c2c" alt="">
+            </figure>
+          </div>
+          <div class="col-8">
+            <h1>Ideate</h1>
+            <p>As soon the research is concluded the team then figure out basic design ideas. These ideas are merely blueprints or mockups that will then be used as a first step towards creating the exemplary web experiences that will connect, communicate with online website visitors.</p>
+          </div>
+        </div>
+        <div class="row step3" id="create-row"> 
+          <div class="col-4">
+            <figure>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fcreate.png?alt=media&token=43a921e8-4ecf-48b9-9e49-dae460cb3935" alt="">
+            </figure>
+          </div>
+          <div class="col-8">
+            <h1>Create</h1>
+            <p>Once the basic idea has been formed, the main designers will be given these blueprints to convert them into design layouts. If you haven’t provided us with specific content, we will be using dummy content at this stage to portray the layout and design to content ration on the website.</p>
+          </div>
+        </div>
+        <div class="row step4" id="color-row"> 
+          <div class="col-4">
+            <figure>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fcolor.png?alt=media&token=5c291031-b5f0-4b6c-bf6f-fb95a02ae987" alt="">
+            </figure>
+          </div>
+          <div class="col-8">
+            <h1>Color</h1>
+            <p>As the basic design is created and a go-ahead is given by the client about the basic structure or layout of the website. The design team will work on the color theme enhancement and matching it with the logo colors that will help the website connect with the audiences suitably.</p>
+          </div>
+        </div>
+        <div class="row step5" id="revision-row"> 
+          <div class="col-4">
+            <figure>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Frevision.png?alt=media&token=3fde952d-f916-47f0-beac-464328f0f504" alt="">
+            </figure>
+          </div>
+          <div class="col-8">
+            <h1>Revision</h1>
+            <p>You might not agree with the overall user experience that we devise; hence we give you the liberty to get your website customized to your liking. Upon receiving your feedback, we will not only work to get the changes integrated but also work with you for the best outcomes.
+            </p>
+          </div>
+        </div>
+        <div class="row step6" id="finalize-row"> 
+          <div class="col-4">
+            <figure>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Ffinalize.png?alt=media&token=71956790-4983-4518-ab74-95db34575166" alt="">
+            </figure>
+          </div>
+          <div class="col-8">
+            <h1>Finalize</h1>
+            <p>Once everything is in place, all the content, imagery and linking has been done to perfection as per your satisfaction. Our design and development experts will move towards the final launch of your website and provide you with the handover of the project marking the official closure.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="font-weight-bold">Look What Our Customers Say About User</h1>
+          </div>
+          <div class="col-12 text-center">
+            <h4>We Have Been Applauded And Recognize By Prestigious Entities OF The Industry</h4>
+          </div>
+        </div>
+        <div id="carousel-example-multi1" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
+
+          <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating" href="#carousel-example-multi1" data-slide="prev"><i
+                class="fas fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#carousel-example-multi1" data-slide="next"><i
+                class="fas fa-chevron-right"></i></a>
+          </div>
+          <!--/.Controls-->
+        
+          <div class="carousel-inner v-2" role="listbox">
+        
+            <div class="carousel-item active">
+
+              <div class="col-12 col-md-4">
+
+              <!-- Card -->
+                <div class="card testimonial-card">
+
+                  <!-- Background color -->
+                  <div class="card-up red lighten-1"></div>
+
+                  <!-- Avatar -->
+                  <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+                      alt="woman avatar">
+                  </div>
+
+                  <!-- Content -->
+                  <div class="card-body">
+                    <!-- Name -->
+                    <h4 class="card-title">Jose Jimenez</h4>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <hr>
+                    <!-- Quotation -->
+                    <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+                    </p>
+                  </div>
+
+                </div>
+                <!-- Card -->
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="col-12 col-md-4">
+                
+             <!-- Card -->
+                <div class="card testimonial-card">
+
+                  <!-- Background color -->
+                  <div class="card-up blue lighten-1"></div>
+
+                  <!-- Avatar -->
+                  <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+                      alt="woman avatar">
+                  </div>
+
+                  <!-- Content -->
+                  <div class="card-body">
+                    <!-- Name -->
+                    <h4 class="card-title">Maria Ortega</h4>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <hr>
+                    <!-- Quotation -->
+                    <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+                    </p>
+                  </div>
+
+                </div>
+                <!-- Card -->
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="col-12 col-md-4">
+
+                <!-- Card -->
+                  <div class="card testimonial-card">
+
+                    <!-- Background color -->
+                    <div class="card-up purple lighten-1"></div>
+
+                    <!-- Avatar -->
+                    <div class="avatar mx-auto white">
+                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+                        alt="woman avatar">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="card-body">
+                      <!-- Name -->
+                      <h4 class="card-title">Anastasia Chirinos</h4>
+                      <i class="fas fa-star amber-text"></i>
+                      <i class="fas fa-star amber-text"></i>
+                      <i class="fas fa-star amber-text"></i>
+                      <i class="fas fa-star amber-text"></i>
+                      <i class="fas fa-star amber-text"></i>
+                      <hr>
+                      <!-- Quotation -->
+                      <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+                      </p>
+                    </div>
+
+                  </div>
+                  <!-- Card -->
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="col-12 col-md-4">
+
+               <!-- Card -->
+                <div class="card testimonial-card">
+
+                  <!-- Background color -->
+                  <div class="card-up lime lighten-1"></div>
+
+                  <!-- Avatar -->
+                  <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+                      alt="woman avatar">
+                  </div>
+
+                  <!-- Content -->
+                  <div class="card-body">
+                    <!-- Name -->
+                    <h4 class="card-title">Miguel Lopez</h4>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <hr>
+                    <!-- Quotation -->
+                    <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+                    </p>
+                  </div>
+
+                </div>
+                <!-- Card -->
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="col-12 col-md-4">
+
+                <!-- Card -->
+                <div class="card testimonial-card">
+
+                  <!-- Background color -->
+                  <div class="card-up orange lighten-1"></div>
+
+                  <!-- Avatar -->
+                  <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+                      alt="woman avatar">
+                  </div>
+
+                  <!-- Content -->
+                  <div class="card-body">
+                    <!-- Name -->
+                    <h4 class="card-title">Luis Perez</h4>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <hr>
+                    <!-- Quotation -->
+                    <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+                    </p>
+                  </div>
+
+                </div>
+                <!-- Card -->
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="col-12 col-md-4">
+
+              <!-- Card -->
+                <div class="card testimonial-card">
+
+                  <!-- Background color -->
+                  <div class="card-up brown lighten-1"></div>
+
+                  <!-- Avatar -->
+                  <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+                      alt="woman avatar">
+                  </div>
+
+                  <!-- Content -->
+                  <div class="card-body">
+                    <!-- Name -->
+                    <h4 class="card-title">Pepito Becerro</h4>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <i class="fas fa-star amber-text"></i>
+                    <hr>
+                    <!-- Quotation -->
+                    <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+                    </p>
+                  </div>
+
+                </div>
+                <!-- Card -->
+                
+              </div>
+            </div>
+        
+          </div>
+        
+        </div>
+      </section>
+
+      <section class="contact-us container">
+        <!--Section: Contact v.2-->
+        <div class="mb-4">
+
+          <!--Section heading-->
+          <h2 class="h1-responsive font-weight-bold text-center my-4">We Would Like To Hear From You</h2>
+          <!--Section description-->
+          <p class="text-center w-responsive mx-auto mb-5">Heads Up! We Require That You Sign Up For Weblogies Services And Packages.
+            We Make All Your Dreams Come True In A Successful Project.</p>
+
+          <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-9 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    
+                    <!--Grid row-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Enter your name</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Grid row-->
+                    
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Enter your email here</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="phone-number" name="phone-number" class="form-control">
+                                <label for="phone-number" class="">Phone number</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <div class="row">
+
+                          <!--Grid column-->
+                          <div class="col-md-12">
+
+                              <div class="md-form">
+                                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                  <label for="message">Enter message here</label>
+                              </div>
+
+                          </div>
+                      </div>
+                      <!--Grid row-->
+
+                  </form>
+
+                  <div class="text-center text-md-left">
+                      <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Submit</a>
+                  </div>
+                  <div class="status"></div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-3 text-center">
+                  <ul class="list-unstyled mb-0">
+                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                          <p>San Francisco, CA 94126, USA</p>
+                      </li>
+
+                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                          <p>+ 01 234 567 89</p>
+                      </li>
+
+                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                          <p>contact@mdbootstrap.com</p>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+          </div>
+
+        </div>
+        <!--Section: Contact v.2--> 
+      </section>
+
+     
+
+    </main>
+  
+ 
+
+
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+  <script src="./js/index.js"></script>
+  <script>
+    $( document ).ready(function() {
+  new WOW().init();
+
+  $('[data-toggle="tooltip"]').tooltip()
+
+});
+
+  </script>
+</body>
+</html>

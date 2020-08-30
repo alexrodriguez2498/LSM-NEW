@@ -1,0 +1,418 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>nutriphama</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body class="nutripharmaFont">
+		<header id="header">
+			<div class="container main-menu" style="    padding-bottom: 0;padding-top: 0; margin-left: 0;margin-right: 0;max-width: 100%">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo" style="    margin-left: 3%;">
+						<a href="#"><img src="img/nutripharma/logo_nutripharma.png" alt="" title=""
+										 style="    width: 140px;height: 85px;" /></a>
+					</div>
+					<nav id="nav-menu-container" style="margin-right: 3%;">
+						<ul class="nav-menu">
+							<li><a href="index.html">INICIO</a></li>
+							<li><a href="productos.html">PRODUCTOS</a></li>
+							<li><a href="servicios.html">SERVICIOS</a></li>
+							<li><a href="contacto.html">CONTACTO</a></li>
+						</ul>
+					</nav><!-- #nav-menu-container -->
+				</div>
+			</div>
+		</header><!-- #header -->
+
+
+		  <!-- Start home-about Area -->
+		  <section class="home-about-area" style="padding-top: 8rem;">
+			  <div class="container" style="    margin-left: 0;margin-right: 0;max-width: 100%;padding-left: 3%;padding-right: 3%;">
+				  <span style="font-size: 4rem;line-height: normal; color: black;">
+							  Contacto
+						  </span>
+
+				  <div class="contact-mobile-content" style="display: none;">
+					  <div class="row">
+						  <form style="    padding: 3%;" id="myFormResponsive" method="post" action="mail2.php">
+							  <div class="row mb-25">
+								  <div class="col">
+									  <input type="text" name="nameResponsive" id="nameResponsive" class="form-control" placeholder="NOMBRE Y APELLIDOS">
+								  </div>
+							  </div>
+
+							  <div class="row mb-25">
+								  <div class="col">
+									  <input type="text" name="emailResponsive" id="emailResponsive" class="form-control" placeholder="E-MAIL">
+								  </div>
+								  <div class="col">
+									  <input type="text" name="cellphoneResponsive" id="cellphoneResponsive" class="form-control" placeholder="CELULAR">
+								  </div>
+							  </div>
+
+							  <div class="row mb-25">
+								  <div class="col">
+									  <input type="text" name="subjectResponsive" id="subjectResponsive" class="form-control" placeholder="ASUNTO">
+								  </div>
+							  </div>
+
+							  <div class="row mb-25">
+								  <div class="col">
+									  <textarea class="form-control" name="messageResponsive" id="messageResponsive" placeholder="MENSAJE" rows="6"></textarea>
+								  </div>
+							  </div>
+							  <button type="submit" onclick="sendObjectsResponsive()" class="btn btn-primary">Enviar</button>
+						  </form>
+					  </div>
+
+					  <div class="row">
+						  <!--<div style="    width: 100%;line-height: 1;padding: 0 2% 2% 2%;height: 100%; display: grid;">-->
+						  <div id="map2" style="    width: 767px;height: 400px;"></div>
+						  <!--</div>-->
+					  </div>
+				  </div>
+
+				  <div class="row justify-content-between">
+					  <div class="col-lg-6 col-md-6 col-sm-12 home-about-left">
+						  <div style="    width: 100%;line-height: 1;padding: 0 2% 2% 2%;height: 100%; display: grid;">
+							  <div id="map"></div>
+						  </div>
+					  </div>
+					  <div class="col-lg-6 col-md-6 d-none d-md-block home-about-left pt-30">
+						  <form id="myForm" method="post" action="mail.php">
+							  <div class="row mb-25">
+								  <div class="col">
+									  <input type="text" name="name" id="name" class="form-control" placeholder="NOMBRE Y APELLIDOS">
+								  </div>
+							  </div>
+
+							  <div class="row mb-25">
+								  <div class="col">
+									  <input type="text" name="email" id="email" class="form-control" placeholder="E-MAIL">
+								  </div>
+								  <div class="col">
+									  <input type="text" name="cellphone" id="cellphone" class="form-control" placeholder="CELULAR">
+								  </div>
+							  </div>
+
+							  <div class="row mb-25">
+								  <div class="col">
+									  <input type="text" name="subject" id="subject" class="form-control" placeholder="ASUNTO">
+								  </div>
+							  </div>
+
+							  <div class="row mb-25">
+								  <div class="col">
+									  <textarea class="form-control" name="message" id="message" placeholder="MENSAJE" rows="6"></textarea>
+								  </div>
+							  </div>
+
+							  <button type="submit" onclick="sendObjects()" class="btn btn-primary">Enviar</button>
+						  </form>
+					  </div>
+				  </div>
+
+				  <div class="row justify-content-between" style="color: black;">
+					  <p class="pt-15" style="    font-size: 1rem;line-height: 1.2rem; padding-left: 2%;">
+						  <span style="color: #72bf44; font-weight: bold;">LIMA</span><br>
+						  <span style="font-weight: bold">Clínicas Limatambo</span><br>
+						  <span>Sede Principal San Isidro.</span><br>
+						  <span>Sede San Juan de Lurigancho.</span><br>
+						  <span>Sede Minka Callao.</span><br>
+						  <span>Teléfono: 01 617111</span><br>
+						  <br>
+						  <span style="font-weight: bold">Farmacia Universal</span><br>
+						  <span>Av. Emancipación 799 Cercado de Lima.</span><br>
+						  <span>Teléfono: 01 4171800</span><br>
+						  <br>
+						  <!--<span style="font-weight: bold">OTIFARMA</span><br>-->
+						  <!--<span>Av. Alfonzo Ugarte 900 Cercado de Lima.</span><br>-->
+						  <!--<span>Teléfono: 01 3330404</span><br>-->
+						  <!--<br>-->
+						  <span style="font-weight: bold">FarmaMía</span><br>
+						  <span>Av. Industrial 160 Urb. La Aurora, Ate.</span><br>
+						  <span>Teléfono: 01 3267200</span><br>
+						  <br>
+						  <span style="color: #72bf44; font-weight: bold;">PROVINCIAS:</span><br>
+						  <span style="font-weight: bold">Trujillo</span><br>
+						  <span style="font-weight: bold">Droguería Distribuidora Pacífico S.A.C</span><br>
+						  <span>Mz. A Lote 9 Urbanización Los Galeanos</span><br>
+						  <span>Trujillo</span><br>
+						  <span>Teléfono: 990099510 - 970909472</span><br>
+						  <br>
+						  <span style="font-weight: bold">Cusco</span><br>
+						  <span style="font-weight: bold">Corsofar E.I.R.L.</span><br>
+						  <span>Av. Agustin Gamarra Mz A LOTE 5 Urb</span><br>
+						  <span>Primavera - Santiago Cusco</span><br>
+						  <span>Teléfono: 984128179</span><br>
+						  <br>
+						  <span style="font-weight: bold">Huancayo</span><br>
+						  <span style="font-weight: bold">Droguería Euro and America</span><br>
+						  <span style="font-weight: bold">Pharmaceutical S.A.C.</span><br>
+						  <span>Jr. Parra del Riego 137. El Tambo</span><br>
+						  <span>Huancayo</span><br>
+						  <span>Teléfono: 964625100</span><br>
+						  <br>
+						  <span style="font-weight: bold">Pucallpa</span><br>
+						  <span style="font-weight: bold">Nutraceúticos Selva E.I.R.L.</span><br>
+						  <span>Av. Centenario Km 4500 (frente al</span><br>
+						  <span>Senati) Coronel Portillo - Callería</span><br>
+						  <span>Teléfono: 947494979</span><br>
+						  <br>
+					  </p>
+				  </div>
+			  </div>
+		  </section>
+		  <!-- End home-about Area -->
+
+
+<!-- Start home-about Area -->
+		  <section class="home-about-area pt-80 pb-40" style="    border-top: 1px solid;padding-top: 0;">
+			  <div class="container" style="    margin-left: 0;margin-right: 0;max-width: 100%;padding-left: 5%;padding-right: 5%;">
+				  <div class="row vdivide">
+					  <div class="col-lg-4 col-md-6">
+						  <div class="single-services">
+							  <span class="lnr lnr-map-marker"></span>
+							  <p class="pt-15">
+								  Jr. Tumán 151 of. 3 CC Monterrico<br>Santiago del Surco, Lima - Peru
+							  </p>
+						  </div>
+					  </div>
+					  <div class="col-lg-4 col-md-6">
+						  <div class="single-services">
+							  <span class="lnr lnr-envelope"></span>
+							  <p class="pt-15">
+								  ventas@nutripharmasac.com<br>gerencia@nutripharmasac.com
+							  </p>
+						  </div>
+					  </div>
+					  <div class="col-lg-4 col-md-6">
+						  <div class="single-services">
+							  <span class="lnr lnr-phone-handset"></span>
+							  <p class="pt-15">
+								  teléfonos<br>051 2702704<br>+01 924018277 / +01 994700775
+							  </p>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+		  <!-- End home-about Area -->
+
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+  			<script src="js/easing.min.js"></script>
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+    		<script src="js/jquery.tabs.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>	
+            <script src="js/isotope.pkgd.min.js"></script>			
+			<script src="js/waypoints.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/simple-skillbar.js"></script>							
+			<script src="js/owl.carousel.min.js"></script>							
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-9uctbbkBtHKnpxraG_tyY7n690Fx8ts&callback=initMap"
+				type="text/javascript"></script>
+
+		<script>
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: {lat: -12.0447267, lng: -77.0424607},
+					zoom: 6
+				});
+
+				map2 = new google.maps.Map(document.getElementById('map2'), {
+					center: {lat: -12.0447267, lng: -77.0424607},
+					zoom: 6
+				});
+
+				var marker1 = new google.maps.Marker({
+					position: {lat: -12.0447267, lng: -77.0424607},
+					map: map,
+					title: 'Farmacia Universal'
+				});
+
+				var marker1Responsive = new google.maps.Marker({
+					position: {lat: -12.0447267, lng: -77.0424607},
+					map: map2,
+					title: 'Farmacia Universal'
+				});
+
+				var marker2 = new google.maps.Marker({
+					position: {lat: -12.0509234, lng: -77.0448124},
+					map: map,
+					title: 'OTIFARMA'
+				});
+
+				var marker2Responsive = new google.maps.Marker({
+					position: {lat: -12.0509234, lng: -77.0448124},
+					map: map2,
+					title: 'OTIFARMA'
+				});
+
+				var marker3 = new google.maps.Marker({
+					position: {lat: -12.0508757, lng: -77.0601333},
+					map: map,
+					title: 'FarmaMía'
+				});
+
+				var marker3Responsive = new google.maps.Marker({
+					position: {lat: -12.0508757, lng: -77.0601333},
+					map: map2,
+					title: 'FarmaMía'
+				});
+
+				var marker4 = new google.maps.Marker({
+					position: {lat: -8.0975827, lng: -79.0451398},
+					map: map,
+					title: 'Droguería Distribuidora Pacífico S.A.C'
+				});
+
+				var marker4Responsive = new google.maps.Marker({
+					position: {lat: -8.0975827, lng: -79.0451398},
+					map: map2,
+					title: 'Droguería Distribuidora Pacífico S.A.C'
+				});
+
+				var marker5 = new google.maps.Marker({
+					position: {lat: -13.5299334, lng: -71.9742685},
+					map: map,
+					title: 'Corsofar E.I.R.L.'
+				});
+
+				var marker5Responsive = new google.maps.Marker({
+					position: {lat: -13.5299334, lng: -71.9742685},
+					map: map2,
+					title: 'Corsofar E.I.R.L.'
+				});
+
+				var marker6 = new google.maps.Marker({
+					position: {lat: -12.0582941, lng: -75.2143407},
+					map: map,
+					title: 'Droguería Euro and America'
+				});
+
+				var marker6Responsive = new google.maps.Marker({
+					position: {lat: -12.0582941, lng: -75.2143407},
+					map: map2,
+					title: 'Droguería Euro and America'
+				});
+
+				var marker7 = new google.maps.Marker({
+					position: {lat: -8.3872158, lng: -74.5670077},
+					map: map,
+					title: 'Nutraceúticos Selva E.I.R.L.'
+				});
+
+				var marker7Responsive = new google.maps.Marker({
+					position: {lat: -8.3872158, lng: -74.5670077},
+					map: map2,
+					title: 'Nutraceúticos Selva E.I.R.L.'
+				});
+
+				var marker8 = new google.maps.Marker({
+					position: {lat: -16.3993278, lng: -71.5192988},
+					map: map,
+					title: 'NEGENAS E.I.R.L, Negocios Generales Astral'
+				});
+
+				var marker8Responsive = new google.maps.Marker({
+					position: {lat: -16.3993278, lng: -71.5192988},
+					map: map2,
+					title: 'NEGENAS E.I.R.L, Negocios Generales Astral'
+				});
+			}
+
+			$(function(){
+				$(window).load(function(){
+					initMap();
+				});
+			});
+
+			function sendObjects() {
+				if (validateForm()) {
+					alert('Correo Enviado');
+					document.getElementById('myForm').submit();
+				} else {
+					alert("existen campos obligatorios invalidos");
+				}
+			}
+
+			function validateForm() {
+				var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+				if (!re.test($('#email')[0].value)) {
+					return false;
+				}
+				if (($('#name')[0].value).length == 0) {
+					return false
+				}
+				if (($('#subject')[0].value).length == 0) {
+					return false
+				}
+				if (($('#cellphone')[0].value).length == 0) {
+					return false
+				}
+				return true;
+			}
+
+			function sendObjectsResponsive() {
+				if (validateFormResponsive()) {
+					alert('Correo Enviado');
+					document.getElementById('myFormResponsive').submit();
+				} else {
+					alert("existen campos obligatorios invalidos");
+				}
+			}
+
+			function validateFormResponsive() {
+				var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+				if (!re.test($('#emailResponsive')[0].value)) {
+					return false;
+				}
+				if (($('#nameResponsive')[0].value).length == 0) {
+					return false
+				}
+				if (($('#subjectResponsive')[0].value).length == 0) {
+					return false
+				}
+				if (($('#cellphoneResponsive')[0].value).length == 0) {
+					return false
+				}
+				return true;
+			}
+		</script>
+		</body>
+	</html>

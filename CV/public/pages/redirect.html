@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        const getQueryParams = ( params ) => {
+            let reg = new RegExp( '[?&]' + params + '=([^&#]*)', 'i' );
+            let queryString = reg.exec(window.location.href);
+            return queryString ? queryString[1] : null;
+        };
+
+        var url = getQueryParams('url');
+        console.log(url);
+        document.location.href = url;
+    </script>
+</body>
+</html>

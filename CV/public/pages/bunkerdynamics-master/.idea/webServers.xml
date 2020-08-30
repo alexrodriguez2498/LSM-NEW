@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="02f627b6-8396-474c-ba7e-a308c3f1ec8d" name="apache" url="http://localhost/webStormProjects/bunkerdynamics">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\webStormProjects\bunkerdynamics" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

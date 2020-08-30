@@ -1,0 +1,23 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexrodriguez2498/CV.git"
+  },
+  "author": "alex rodriguezx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexrodriguez2498/CV/issues"
+  },
+  "homepage": "https://github.com/alexrodriguez2498/CV#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pretty Princess</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/jqueryslidemenu.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="css/jqueryslidemenu.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Ecospa Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script type="text/javascript" src="js/jqueryslidemenu.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script src="js/jquery.chocolat.js"></script>
+    <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+</head>
+<body>
+<!--header-->
+<div id="myslidemenu" class="jqueryslidemenu">
+    <div class="logo">
+        <a href="index.html"><img src="images/pretty.png" width="78%" height="83%" alt="" style="    margin-left: 10%;"></a>
+    </div>
+    <ul class="responsiveNavBar">
+        <li><a href="contacto.html">&nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp;Contacto</a></li>
+        <li><a href="birthdays.html">&nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp;Cumpleaños</a></li>
+
+        <li class="active" onclick="changeServiceButton()"><a href="#">&nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp;Servicios</a>
+            <ul id="dropdownMenu" class="dropdownMenu">
+                <li style="padding-top: 15px;"><a href="entertainment.html">Entretenimiento</a></li>
+                <li><a href="living.html">Salón</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="promotions.html">Promociones</a></li>
+            </ul>
+        </li>
+        <li><a href="index.html">Home</a></li>
+
+        <div class="clearfix"></div>
+    </ul>
+    <br style="clear: left"/>
+</div>
+<div class="header-top2">
+    <div class="slider">
+        <div style="width: 100%;" class="container">
+            <div class="row">
+                <!-- Carousel -->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/foto_promociones_cutted.jpg" alt="First slide">
+                        </div>
+                    </div>
+                </div><!-- /carousel -->
+            </div>
+
+        </div>
+        <div style="width: 100%;" class="container">
+            <div class="row">
+                <!-- Carousel -->
+                <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/promos_juntas_v2.png" alt="First slide">
+                        </div>
+                    </div>
+                </div><!-- /carousel -->
+            </div>
+
+        </div>
+    </div>
+    <!--footer-->
+    <div id="footer" class="footer" style="padding-bottom: 6em;"></div>
+
+    <script>
+        $("#footer").load("/components/footer.html");
+
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+        $(function () {
+            $('.gallery-grid a').Chocolat();
+        });
+    </script>
+
+</body>
+</html>

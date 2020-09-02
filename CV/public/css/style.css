@@ -255,4 +255,8 @@ background-size: cover;
           text-decoration-line: line-through;
         }
 
+        .img-small{
+          width: 90px;
+          height: 80px;
+        }
       

@@ -20,11 +20,11 @@
 </head>
 <body>
   <div class="button-chat-container">
-  <button id="chat" type="button" class="btn btn-primary btn-rounded">chat <i class="fas fa-comment-dots"></i></button>
+  <a id="chat" type="button" class="btn peach-gradient btn-rounded">chat <i class="fas fa-comment-dots"></i></a>
   </div>
 
   <div class="button-discount-container">
-  <button id="discount" data-toggle="modal" data-target="#discountModal" type="button" class="btn btn-primary btn-lg">GET 50% DISCOUNT <i class="fas fa-chevron-up  fa-2x"></i></button>
+  <a id="discount" data-toggle="modal" data-target="#discountModal" type="button" class="btn btn-rounded blue-gradient btn-lg">GET 50% DISCOUNT <i class="fas fa-chevron-up  fa-2x"></i></a>
   </div>
 
 
@@ -80,7 +80,7 @@ aria-hidden="true">
 
 
   <div class="button-callback-container">
-  <button id="callback" type="button" data-toggle="modal" data-target="#callbackModal"class="btn btn-primary btn-lg">Request a Call Back <i class="fas fa-chevron-down  fa-2x"></i></button>
+  <a id="callback" type="button" data-toggle="modal" data-target="#callbackModal"class="btn btn-rounded purple-gradient btn-lg">Request a Call Back <i class="fas fa-chevron-down  fa-2x"></i></a>
   </div>
   <div class="modal fade left" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 aria-hidden="true">
@@ -222,23 +222,19 @@ aria-hidden="true">
   
           <!-- Left -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item d-flex align-items-center">
-              <a class="nav-link" href="./servicios.html">About Us
+            <li class="nav-item ">
+              <a class="nav-link" href="./servicios.html">Contact Us
               </a>
             </li>
-            <li class="nav-item d-flex align-items-center">
-              <a class="nav-link" href="./portafolio.html" >Contact Us</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./portafolio.html" >About Us</a>
+            </li>       
+            <li class="nav-item">
+              <a class="nav-link btn btn-rounded aqua-gradient px-4 mx-2 my-0 font-weight-bold" href="./contacto.html" >Live Chat</a>
             </li>
-            <li class="nav-item d-flex align-items-center">
-              <a class="nav-link" href="./nosotros.html" >+51 917 902 604</a>
+            <li class="nav-item">
+              <a class="nav-link btn btn-rounded purple-gradient px-4 mx-2 my-0 font-weight-bold" href="./contacto.html" >Hire Us</a>
             </li>
-            <li class="nav-item d-flex align-items-center">
-              <a href="" class="btn btn-primary">Live Chat</a>
-            </li>
-            <li class="nav-item d-flex align-items-center">
-              <a href="" class="btn btn-primary">Hire Us</a>
-            </li>
-            
           </ul>
   
   
@@ -248,114 +244,195 @@ aria-hidden="true">
     </nav>
     <!-- Navbar -->
     <header>
-      <!--Carousel Wrapper-->
       <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-
+  
+        <!--Indicators-->
+        <ol class="carousel-indicators  mr-0 ml-auto w-25">
+          <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+        </ol>
+        <!--/.Indicators-->
     
-
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-
-        <!--First slide-->
-        <div class="carousel-item active d-flex justify-content-center align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6 text-center">
-              <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-1.png?alt=media&token=1d905a97-7b70-480d-86b2-cad2fe5ffa6b" alt="image-1">
+        <!--Slides-->
+        <div class="carousel-inner " role="listbox">
+    <picture>
+      <source media="(r)" srcset="">
+      <img src="" alt="">
+    </picture>
+          <!--First slide-->
+          <div class="carousel-item active">
+            
+            <div class="view" style="background-image: url( 'https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
+    
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-light d-flex justify-content-between align-items-center ">
+    
+               
+                <!-- Content -->
+                <div class="text-left white-text mx-5 animated fadeInLeft">
+                 
+    
+                  <p >
+                    <strong>Somos una</strong>
+                  </p>
+    
+                  <p class= "h2">
+                    <strong>Agencia de </strong>
+                  </p>
+                  <h1 class="display-3 yellow-text" >
+                    <strong>Marketing Digital</strong>
+                  </h1>
+  
+                  <hr class="warning-color">
+    
+                  <p>
+                    Tus retos son grandes, nuestras ideas y compromisos tambien.
+                  </p>
+                </div>
+              
+  
+             
             </div>
-            <div class="col-12 col-lg-6">
-              <h1>Professional Web Design & Development</h1>
-              <p>We leverage the strengths of each and every platform to build incredible solutions across apple services iPhone, iPad, Apple Watch, and android devices.</p>
-              <div class="row">
-                <div class="col">
-                  <p>Seamless User Experiences</p>
-                  <p>Cross Platform Compatibility</p>
-                </div>
-                <div class="col">
-                  <p>Diverse technology</p>
-                  <p>UNprecedented Success</p>
-                </div>
+                <!-- Content -->
+  
+              
+    
               </div>
+              <!-- Mask & flexbox options-->
+    
+            </div>
+    
+          <!--/First slide-->
+    
+          <!--Second slide-->
+          <div class="carousel-item">
+            <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/47.jpg'); background-repeat: no-repeat; background-size: cover;">
+    
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-light d-flex justify-content-left align-items-center">
+    
+                <!-- Content -->
+                <div class="text-left white-text mx-5 ">
+                  <h1 class="mb-4  animated zoomIn">
+                    <strong class="display-3 yellow-text">Diseno Web</strong>
+                  </h1>
+  
+                  <p class="h2  animated zoomIn delay-1s">a Medida</p> 
+                  
+                  <hr class="warning-color">
+  
+                  <p class=" animated zoomIn delay-2s">
+                    <strong>con alto nivel grafico, intuitivas, <br> emotivas, aplicando diseno inteligente  <br>que cumpla con tus objetivos de negocio.</strong>
+                  </p>
+    
+                
+    
+                 
+                </div>
+                <!-- Content -->
+    
+              </div>
+              <!-- Mask & flexbox options-->
+    
             </div>
           </div>
+          <!--/Second slide-->
+    
+          <!--Third slide-->
+          <div class="carousel-item">
+            <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/79.jpg'); background-repeat: no-repeat; background-size: cover;">
+    
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-light d-flex justify-content-left align-items-center">
+    
+                <!-- Content -->
+                <div class="text-left white-text mx-5  ">
+                  
+                  <p class="m-0 animated fadeInUp ">
+                    <strong>Manejo de </strong>
+                  </p>
+  
+                  <p class="h2 animated fadeInLeft delay-1s "><strong>Campanas</strong></p>
+  
+                  <h1 class="mb-4 animated fadeInLeft delay-2s">
+                    <strong class="display-3 yellow-text">Digitales</strong>
+                  </h1>
+  
+                  <hr class="warning-color">
+  
+                  
+                 <p class="animated fadeInDown">
+                   <strong>Publicidad online con Google Ads,<br> Facebook Ads, Instagram Ads, Display Ads, <br> Email marketing y Whatsapp Business.</strong>
+                 </p>
+    
+                 
+                </div>
+                <!-- Content -->
+    
+              </div>
+              <!-- Mask & flexbox options-->
+    
+            </div>
+          </div>
+          <!--/Third slide-->
+  
+          <!--Fourth slide-->
+          <div class="carousel-item">
+            <div class="view"  style="background-image: url('https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Ffoto%20de%20fondo1%20(1).png?alt=media&token=5a42bebd-3423-4842-980f-baeeab7aaa4d'); background-repeat: no-repeat; background-size: cover;">
+    
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-light d-flex justify-content-left align-items-center">
+    
+                <!-- Content -->
+                <div class="text-left white-text mx-5 ">
+                  
+                  <p class="animated bounceIn ">
+                    <strong>Quieres ganar </strong>
+                  </p>
+  
+                  <p class=" h2 animated bounceIn delay-1s "><strong>mas clientes con</strong></p>
+                
+  
+                  <h1 class=" display-3 yellow-text mb-4 animated bounceIn delay-2s">
+                    <strong>Google</strong>
+                  </h1>
+  
+                  <hr class="warning-color">
+  
+                  
+                 <p class="animated fadeInLeft delay-1s">
+                   <strong>A traves del SEO - Posicionamiento web<br> hacemos que tu negocio aparezca en los <br> primeros lugares de busqueda de Google</strong>
+                 </p>
+    
+                 
+                </div>
+                <!-- Content -->
+    
+              </div>
+              <!-- Mask & flexbox options-->
+    
+            </div>
+          </div>
+          <!--/Fourth slide-->
+    
         </div>
-
-          </div>
-       
-        <!--/First slide-->
-
-        <!--Second slide-->
-        <div class="carousel-item d-flex justify-content-center align-items-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-lg-6 text-center">
-                <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-2.png?alt=media&token=ade01c56-2f47-4b90-9637-79ad10673fa6 " alt="iamge-2">
-              </div>
-              <div class="col-12 col-lg-6">
-                <h1>Next Level Web Design & Development</h1>
-                <p>Our dedicated team of design and technology experts partner with you every step of the way to digital innovation independence.</p>
-                <div class="row">
-                  <div class="col">
-                    <p>Wireframing And Prototyping</p>
-                    <p>Flexible Grid Implementation</p>
-                  </div>
-                  <div class="col">
-                    <p>Responsive Development</p>
-                    <p>Content Management Systems</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
+        <!--/.Slides-->
+    
+        <!--Controls-->
+        <!-- <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+        <!--/.Controls-->
+      
         
-        <!--/Second slide-->
-
-        <!--Third slide-->
-        <div class="carousel-item d-flex justify-content-center align-items-center">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-12 col-lg-6 text-center">
-                <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-3.png?alt=media&token=5bccb849-34d0-47d9-b256-168a245915d8" alt="image-3">
-              </div>
-              <div class="col-12 col-md-6">
-                <h1>70% INcrease In Conversion Rate</h1>
-                <p>Effortlessly capture leads, build customer relationships and accept payments right from your device.</p>
-                <div class="row">
-                  <div class="col">
-                    <p>Merchant Integration</p>
-                    <p>Product Report</p>
-                  </div>
-                  <div class="col">
-                    <p>Products & Categories</p>
-                    <p>Customer's Registration</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          </div>
-       
-        <!--/Third slide-->
-
-      </div>
-      <!--/.Slides-->
-
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
-
-  </div>
-  <!--/.Carousel Wrapper-->
+      </div> 
     </header>
     <main>
       <section class="services-buttons container-fluid ">

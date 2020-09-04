@@ -20,11 +20,11 @@
 </head>
 <body>
   <div class="button-chat-container">
-  <a id="chat" type="button" class="btn peach-gradient btn-rounded">chat <i class="fas fa-comment-dots"></i></a>
+  <a id="chat" type="button" class="btn peach-gradient btn-rounded d-flex align-items-center"><p class="m-0 d-none d-md-block">chat</p> <i class="fas fa-comment-dots pl-2"></i></a>
   </div>
 
-  <div class="button-discount-container">
-  <a id="discount" data-toggle="modal" data-target="#discountModal" type="button" class="btn btn-rounded blue-gradient btn-lg">GET 50% DISCOUNT <i class="fas fa-chevron-up  fa-2x"></i></a>
+  <div class="button-discount-container d-none d-md-block">
+  <a id="discount" data-toggle="modal" data-target="#discountModal" type="button" class="btn btn-rounded blue-gradient btn-lg animated slideInUp delay-1s">GET 50% DISCOUNT <i class="fas fa-chevron-up  fa-2x"></i></a>
   </div>
 
 
@@ -79,8 +79,8 @@ aria-hidden="true">
 
 
 
-  <div class="button-callback-container">
-  <a id="callback" type="button" data-toggle="modal" data-target="#callbackModal"class="btn btn-rounded purple-gradient btn-lg">Request a Call Back <i class="fas fa-chevron-down  fa-2x"></i></a>
+  <div class="button-callback-container d-none d-md-block">
+  <a id="callback" type="button" data-toggle="modal" data-target="#callbackModal"class="btn btn-rounded purple-gradient btn-lg animated slideInDown delay-1s">Request a Call Back <i class="fas fa-chevron-down  fa-2x"></i></a>
   </div>
   <div class="modal fade left" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 aria-hidden="true">
@@ -203,7 +203,7 @@ aria-hidden="true">
       </div>
 
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar bg-1">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar bg-1 animated slideInDown delay-1s">
       <div class="container">
   
         <!-- Brand -->
@@ -251,7 +251,6 @@ aria-hidden="true">
           <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-1z" data-slide-to="1"></li>
           <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-          <li data-target="#carousel-example-1z" data-slide-to="3"></li>
         </ol>
         <!--/.Indicators-->
     
@@ -268,28 +267,39 @@ aria-hidden="true">
     
               <!-- Mask & flexbox options-->
               <div class="mask rgba-black-light d-flex justify-content-between align-items-center ">
-    
+
                
                 <!-- Content -->
-                <div class="text-left white-text mx-5 animated fadeInLeft">
+                <div class=" row text-center white-text mx-5 ">
                  
-    
-                  <p >
-                    <strong>Somos una</strong>
-                  </p>
-    
-                  <p class= "h2">
-                    <strong>Agencia de </strong>
-                  </p>
-                  <h1 class="display-3 yellow-text" >
-                    <strong>Marketing Digital</strong>
-                  </h1>
+                  <div class="col-12 col-xl-6">
+                    <figure>
+                      <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-carousel-1.png?alt=media&token=bf37c2b6-3792-4b59-b062-c08e4b79cc0b" alt="">
+                    </figure>
+                  </div>
+                  
+                  <div class="cool-12 col-xl-6">
   
-                  <hr class="warning-color">
+                    <h1 class="display-3 yellow-text d-none d-md-block" >Professional Web Design & Web Development</h1>
+                    <h1 class="h2 yellow-text d-block d-md-none" >Professional Web Design & Web Development</h1>
+  
+                  <hr class="warning-colo d-none d-md-block">
     
-                  <p>
-                    Tus retos son grandes, nuestras ideas y compromisos tambien.
+                  <p class="d-none d-md-block">
+                    We leverage the strengths of each and every platform to build incredible solutions across apple devices iPhone, iPad, Apple Watch, and android devices.
                   </p>
+
+                  <div class="row d-none d-md-block">
+                    <div class="col-6">
+                      <p>Seamless User Experiences</p>
+                      <p>Cross Platform Compatibility</p>
+                    </div>
+                    <div class="col-6">
+                      <p>Diverse Technology</p>
+                      <p>Unprecedented Success</p>
+                    </div>
+                  </div>
+                </div>
                 </div>
               
   
@@ -308,26 +318,43 @@ aria-hidden="true">
     
           <!--Second slide-->
           <div class="carousel-item">
+
             <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/47.jpg'); background-repeat: no-repeat; background-size: cover;">
     
               <!-- Mask & flexbox options-->
-              <div class="mask rgba-black-light d-flex justify-content-left align-items-center">
+              <div class="mask rgba-black-light d-flex justify-content-between align-items-center">
     
                 <!-- Content -->
-                <div class="text-left white-text mx-5 ">
-                  <h1 class="mb-4  animated zoomIn">
-                    <strong class="display-3 yellow-text">Diseno Web</strong>
-                  </h1>
-  
-                  <p class="h2  animated zoomIn delay-1s">a Medida</p> 
-                  
-                  <hr class="warning-color">
-  
-                  <p class=" animated zoomIn delay-2s">
-                    <strong>con alto nivel grafico, intuitivas, <br> emotivas, aplicando diseno inteligente  <br>que cumpla con tus objetivos de negocio.</strong>
-                  </p>
-    
+                <div class="row text-center white-text mx-5 ">
                 
+                  <div class="col-12 col-xl-6">
+                    <figure>
+                      <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimagen-car-carousel-1.png?alt=media&token=b95fb856-c076-4e58-88b2-0d2b7cc29ec8" alt="" class="img-fluid">
+                    </figure>
+                  </div>
+                
+                  <div class="col-12 col-xl-6">
+                  <h1 class="mb-4  display-3 d-none d-md-block yellow-text">>Next Level Web Design & Development</h1>
+                  <h1 class="mb-4  h2 d-block d-md-none yellow-text">Next Level Web Design & Development</h1>
+                  
+                  <hr class="warning-color d-none d-md-block">
+  
+                  <p class="d-none d-md-block">
+                    Our dedicated team of design and technology experts partner with you every step of the way of digital innovation independence.
+                  </p>
+                  
+                  <div class="row d-none d-md-block">
+                    <div class="col-6">
+                      <p>Wireframming And Prototyping</p>
+                      <p>flexible Grid Implementation</p>
+                    </div>
+                    <div class="col-6">
+                      <p>Responsive Development</p>
+                      <p>Content Management System</p>
+                    </div>
+                  </div>
+    
+                </div>
     
                  
                 </div>
@@ -345,29 +372,41 @@ aria-hidden="true">
             <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/79.jpg'); background-repeat: no-repeat; background-size: cover;">
     
               <!-- Mask & flexbox options-->
-              <div class="mask rgba-black-light d-flex justify-content-left align-items-center">
+              <div class="mask rgba-black-light d-flex justify-content-between align-items-center">
     
                 <!-- Content -->
-                <div class="text-left white-text mx-5  ">
+                <div class="row text-center white-text mx-5 ">
                   
-                  <p class="m-0 animated fadeInUp ">
-                    <strong>Manejo de </strong>
-                  </p>
+                  <div class="col-12 col-xl-6">
+                    <figure class="d-flex justify-content-center">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Fimg-carousel-3.png?alt=media&token=79b4b777-661d-4020-af3f-e6bd8940ed97" alt="" class="img-fluid">
+                    </figure>
+                  </div>
+
+                  <div class="col-12 col-xl-6">
   
-                  <p class="h2 animated fadeInLeft delay-1s "><strong>Campanas</strong></p>
-  
-                  <h1 class="mb-4 animated fadeInLeft delay-2s">
-                    <strong class="display-3 yellow-text">Digitales</strong>
-                  </h1>
-  
-                  <hr class="warning-color">
+                    <h1 class="mb-4"><strong class="display-3 yellow-text  d-none d-md-block">70% Increase In Convertion Rate</strong></h1>
+                    <h1 class="mb-4"><strong class="h2 yellow-text d-block d-md-none">70% Increase In Convertion Rate</strong></h1>
+
+                  <hr class="warning-color d-none d-md-block">
   
                   
-                 <p class="animated fadeInDown">
-                   <strong>Publicidad online con Google Ads,<br> Facebook Ads, Instagram Ads, Display Ads, <br> Email marketing y Whatsapp Business.</strong>
-                 </p>
+                 <p>
+                  Effortlessly capture leads, build customer relationships and accept payments right from your website.
+                </p>
+
+                <div class="row d-none d-md-block">
+                  <div class="col-6">
+                    <p>Merchant Integration</p>
+                    <p>Product Reports</p>
+                  </div>
+                  <div class="col-6">
+                    <p>Products & Categories</p>
+                    <p>Customer's Registration</p>
+                  </div>
+                </div>
     
-                 
+                 </div>
                 </div>
                 <!-- Content -->
     
@@ -378,44 +417,6 @@ aria-hidden="true">
           </div>
           <!--/Third slide-->
   
-          <!--Fourth slide-->
-          <div class="carousel-item">
-            <div class="view"  style="background-image: url('https://firebasestorage.googleapis.com/v0/b/lsm-1-46b3d.appspot.com/o/lsm%2Ffoto%20de%20fondo1%20(1).png?alt=media&token=5a42bebd-3423-4842-980f-baeeab7aaa4d'); background-repeat: no-repeat; background-size: cover;">
-    
-              <!-- Mask & flexbox options-->
-              <div class="mask rgba-black-light d-flex justify-content-left align-items-center">
-    
-                <!-- Content -->
-                <div class="text-left white-text mx-5 ">
-                  
-                  <p class="animated bounceIn ">
-                    <strong>Quieres ganar </strong>
-                  </p>
-  
-                  <p class=" h2 animated bounceIn delay-1s "><strong>mas clientes con</strong></p>
-                
-  
-                  <h1 class=" display-3 yellow-text mb-4 animated bounceIn delay-2s">
-                    <strong>Google</strong>
-                  </h1>
-  
-                  <hr class="warning-color">
-  
-                  
-                 <p class="animated fadeInLeft delay-1s">
-                   <strong>A traves del SEO - Posicionamiento web<br> hacemos que tu negocio aparezca en los <br> primeros lugares de busqueda de Google</strong>
-                 </p>
-    
-                 
-                </div>
-                <!-- Content -->
-    
-              </div>
-              <!-- Mask & flexbox options-->
-    
-            </div>
-          </div>
-          <!--/Fourth slide-->
     
         </div>
         <!--/.Slides-->
@@ -661,7 +662,7 @@ aria-hidden="true">
         <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 website-carousel" data-ride="carousel">
 
           <!--Controls-->
-          <div class="controls-top">
+          <div class="controls-top m-0">
             <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
                 class="fas fa-chevron-left"></i></a>
             <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
@@ -995,7 +996,7 @@ aria-hidden="true">
         <div id="carousel-example-ecommerce" class="carousel slide carousel-multi-item v-2 ecommerce-carousel" data-ride="carousel">
 
             <!--Controls-->
-            <div class="controls-top">
+            <div class="controls-top m-0">
               <a class="btn-floating" href="#carousel-example-ecommerce" data-slide="prev"><i
                   class="fas fa-chevron-left"></i></a>
               <a class="btn-floating" href="#carousel-example-ecommerce" data-slide="next"><i
@@ -1057,7 +1058,7 @@ aria-hidden="true">
                   <div class="card-header">
                     <div class="row text-center">
                       <div class="col mx-auto"><i class="fas fa-home fa-3x"></i></div>
-                      <div class="col-12"><h2>Professional E-Commerce</h2></div>
+                      <div class="col-12"><h2>Professional <br> E-Commerce</h2></div>
                       <div class="col-12"><h4> Package</h4></div>
                     </div>
                   </div>
@@ -1695,7 +1696,7 @@ aria-hidden="true">
       <section class="testimonials container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1 class="font-weight-bold">Look What Our Customers Say About User</h1>
+            <h1 class="font-weight-bold">Look What Our Customers Say About Us</h1>
           </div>
           <div class="col-12 text-center">
             <h4>We Have Been Applauded And Recognize By Prestigious Entities OF The Industry</h4>

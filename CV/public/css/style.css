@@ -48,7 +48,7 @@ background: #f8bbd0 !important;
 .button-chat-container{
   position: fixed;
   bottom: 4px;
-  right: 10px;
+  left: 10px;
   z-index: 10;
 }
 

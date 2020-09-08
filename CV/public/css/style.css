@@ -43,12 +43,13 @@ background: #f8bbd0 !important;
   padding: 10px 20px;
   border-radius: 25px;
   border-color: #46b8da;  
+  z-index: 1000;
 }
 
 .button-chat-container{
   position: fixed;
   bottom: 4px;
-  left: 10px;
+  right: 10px;
   z-index: 10;
 }
 

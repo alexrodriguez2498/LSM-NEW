@@ -244,4 +244,22 @@ background: #f8bbd0 !important;
         .modal-header{
           border-radius:1.25rem !important;
         }
+
+        .features-item:hover ~ .features-item{
+          transform: translate3d(50%, 0, 0);
+        }
+
+        .features-container:hover .features-item{
+          opacity: 0.3;
+        }
+
+        .features-container:hover .features-item:hover{
+          transform: scale(1.5);
+          opacity: 1;
+        }
+
+        .features-item{
+          transition: 450ms;
+          transform-origin: center left ;
+        }
       

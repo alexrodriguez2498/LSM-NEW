@@ -27,19 +27,25 @@ myCustomScrollbar.onscroll = function () {
 const $myForm = $('#myForm');
 
 $('#chat').on('click', function () {
-
-   
-  if ($myForm.hasClass('slim') || !$myForm.is(':visible')) {
-
-    $myForm.css('display', 'block');
-    $myForm.removeClass('slim');
-  };
+  openChat();
 })
+
+$('.chat-class').on('click', function () {
+  openChat();
+});
 
 $('#closeButton').not('#toggle').on('click', function () {
 
   $myForm.hide();
 })
+
+function openChat() {
+  if ($myForm.hasClass('slim') || !$myForm.is(':visible')) {
+
+    $myForm.css('display', 'block');
+    $myForm.removeClass('slim');
+  };
+}
 
 $("#toggle").on('click', function () {
 

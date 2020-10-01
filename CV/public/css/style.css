@@ -279,3 +279,7 @@ background: #f8bbd0 !important;
       .hvr-grow:active {
           transform: scale(1.1);
       }
+
+      .contact-link {
+        color: black;
+      }

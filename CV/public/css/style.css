@@ -120,7 +120,11 @@ background: #f8bbd0 !important;
     .chat-room.small-chat .my-custom-scrollbar > .card-body {
       height: 18rem; }
       .chat-room.small-chat .my-custom-scrollbar > .card-body .chat-message .media img {
-        width: 3rem; }
+        width: 3rem;
+        height: 3rem;
+        object-fit: contain;
+        background-color: black;
+      }
       .chat-room.small-chat .my-custom-scrollbar > .card-body .chat-message .media .media-body p {
         font-size: .7rem; }
       .chat-room.small-chat .my-custom-scrollbar > .card-body .chat-message .message-text {
@@ -282,4 +286,29 @@ background: #f8bbd0 !important;
 
       .contact-link {
         color: black;
+      }
+
+      .portfolio .card-img-top {
+        border-radius: 150px !important;
+      }
+
+      .portfolio .overlay {
+        border-radius: 150px !important;
+      }
+
+      .portfolio .card {
+        border-radius: 150px !important;
+      }
+
+      .modal-logo {
+        object-fit: contain;
+      }
+
+      .chat-logo {
+        background-color: black !important;
+        object-fit: contain !important;
+      }
+
+      .chat-logo-2 {
+        background-color: black;
       }

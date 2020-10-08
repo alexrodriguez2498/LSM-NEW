@@ -1,0 +1,41 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__buttons{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.services__content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+}
+
+.keyFeatures{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.portfolio__images{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.features__grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  grid-gap: 15px;
+}
+
+.contactUs__icons{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

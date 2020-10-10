@@ -20,15 +20,33 @@ $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
 const myCustomScrollbar = document.querySelector('.my-custom-scrollbar');
 const ps = new PerfectScrollbar(myCustomScrollbar);
 const scrollbarY = myCustomScrollbar.querySelector('.ps.ps--active-y>.ps__scrollbar-y-rail');
-myCustomScrollbar.onscroll = function () {
-  scrollbarY.style.cssText = `top: ${this.scrollTop}px!important; height: 288px; right: ${-this.scrollLeft}px`;
-}
+  // myCustomScrollbar.onscroll = function () {
+  //   scrollbarY.style.cssText = `top: ${this.scrollTop}px!important; height: 288px; right: ${-this.scrollLeft}px`;
+  // }
 
 const $myForm = $('#myForm');
 
 $('#chat').on('click', function () {
 
-   
+  if ($myForm.hasClass('slim') || !$myForm.is(':visible')) {
+
+    $myForm.css('display', 'block');
+    $myForm.removeClass('slim');
+  };
+})
+
+$('#closeButton').not('#toggle').on('click', function () {
+
+  $myForm.hide();
+})
+
+$("#toggle").on('click', function () {
+
+  $myForm.toggleClass('slim');
+});
+
+$('#chatEnVivo').on('click', function () {
+
   if ($myForm.hasClass('slim') || !$myForm.is(':visible')) {
 
     $myForm.css('display', 'block');
@@ -191,4 +209,17 @@ $(finalizeButton).on('click', () => {
   $('#revision-row').hide()
   $('#finalize-row').show()
 })
+
+
+
+const comprobar = () => {
+  let nombre = document.getElementById('nombre').value
+  let correo = document.getElementById('correo').value
+  let telefono = document.getElementById('telefono').value
+  let mensaje = document.getElementById('mensaje').value
+  alert(`mi nombre es ==> ${nombre} 
+        mi correo es ==> ${correo} 
+        mi telefono es ==> ${telefono} 
+        mi pregunta o consulta es ==> ${mensaje}` )
+}
 
